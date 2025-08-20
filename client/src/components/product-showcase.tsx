@@ -1,4 +1,4 @@
-import { ShoppingCart, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import signatureGheeImage from "@assets/honey-5864_1280_1755659334621.jpg";
@@ -45,10 +45,7 @@ export default function ProductShowcase() {
               <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Artisanal</Badge>
             </div>
             
-            <Button className="w-full bg-ghee-gold text-white hover:bg-ghee-accent font-semibold" data-testid="button-add-to-cart-signature">
-              <Plus className="mr-2 h-4 w-4" />
-              Add to Cart
-            </Button>
+
           </div>
           
           {/* Additional Products */}
@@ -63,15 +60,8 @@ export default function ProductShowcase() {
                 Artisan Small Batch
               </h4>
               <p className="text-sm text-ghee-medium mb-3">Limited edition, ultra-premium</p>
-              <div className="flex justify-between items-center">
+              <div className="text-center">
                 <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-34-99">$34.99</span>
-                <Button 
-                  size="sm" 
-                  className="bg-ghee-gold text-white hover:bg-ghee-accent"
-                  data-testid="button-add-to-cart-artisan"
-                >
-                  Add to Cart
-                </Button>
               </div>
             </div>
             
@@ -85,15 +75,8 @@ export default function ProductShowcase() {
                 Family Size
               </h4>
               <p className="text-sm text-ghee-medium mb-3">Perfect for large families</p>
-              <div className="flex justify-between items-center">
+              <div className="text-center">
                 <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-39-99">$39.99</span>
-                <Button 
-                  size="sm" 
-                  className="bg-ghee-gold text-white hover:bg-ghee-accent"
-                  data-testid="button-add-to-cart-family"
-                >
-                  Add to Cart
-                </Button>
               </div>
             </div>
           </div>

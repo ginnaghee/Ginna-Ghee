@@ -1,4 +1,4 @@
-import { ChevronDown, ShoppingCart, Play } from "lucide-react";
+import { ChevronDown, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
@@ -27,13 +27,6 @@ export default function HeroSection() {
             to bring you the richest, nuttiest taste that transforms every meal into a culinary masterpiece.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              className="bg-ghee-gold text-white px-8 py-4 rounded-full hover:bg-ghee-accent transition-all transform hover:scale-105 font-semibold text-lg h-auto"
-              data-testid="button-order-premium-ghee"
-            >
-              <ShoppingCart className="mr-3 h-5 w-5" />
-              Order Premium Ghee
-            </Button>
             <Button 
               variant="outline"
               className="border-2 border-ghee-gold text-ghee-gold px-8 py-4 rounded-full hover:bg-ghee-gold hover:text-white transition-all font-semibold text-lg h-auto"
