@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Leaf, ShoppingCart, Menu } from "lucide-react";
+import { ShoppingCart, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/ginna-ghee-logo.jpeg";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,8 +19,12 @@ export default function Header() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-ghee-gold to-ghee-accent rounded-full flex items-center justify-center">
-              <Leaf className="text-white text-xl" />
+            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-ghee-gold">
+              <img 
+                src={logoImage} 
+                alt="Ginna Ghee Logo" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h1 className="text-2xl font-serif font-bold text-ghee-dark">Ginna Ghee</h1>
