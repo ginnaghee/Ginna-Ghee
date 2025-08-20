@@ -1,0 +1,65 @@
+import { ChevronDown, ShoppingCart, Play } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export default function HeroSection() {
+  const scrollToProducts = () => {
+    const element = document.getElementById('products');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section id="home" className="relative min-h-screen flex items-center hero-pattern">
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://pixabay.com/get/g3f96b79b86cd75cfc61f6159865cb462a4b92634d5ae8b6e4d758df95c452898874e4e3b11529f8d6a7a90f29dd2cb1ea04672be2fdbe9571d71dccff29592dc_1280.jpg" 
+          alt="Premium golden ghee in elegant glass jar with warm lighting" 
+          className="w-full h-full object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-ghee-cream/70 to-transparent"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-2xl slide-in">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold text-ghee-dark mb-6 leading-tight">
+            The Golden
+            <span className="text-ghee-gold block">Tradition</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-ghee-medium mb-4 font-serif italic">
+            "Richness You Can Taste"
+          </p>
+          <p className="text-lg text-ghee-medium mb-8 leading-relaxed">
+            Experience the authentic flavor of premium browned ghee, crafted with traditional methods 
+            to bring you the richest, nuttiest taste that transforms every meal into a culinary masterpiece.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button 
+              className="bg-ghee-gold text-white px-8 py-4 rounded-full hover:bg-ghee-accent transition-all transform hover:scale-105 font-semibold text-lg h-auto"
+              data-testid="button-order-premium-ghee"
+            >
+              <ShoppingCart className="mr-3 h-5 w-5" />
+              Order Premium Ghee
+            </Button>
+            <Button 
+              variant="outline"
+              className="border-2 border-ghee-gold text-ghee-gold px-8 py-4 rounded-full hover:bg-ghee-gold hover:text-white transition-all font-semibold text-lg h-auto"
+              data-testid="button-watch-story"
+            >
+              <Play className="mr-3 h-5 w-5" />
+              Watch Our Story
+            </Button>
+          </div>
+        </div>
+      </div>
+      
+      <button 
+        onClick={scrollToProducts}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-ghee-gold floating-animation"
+        data-testid="button-scroll-down"
+      >
+        <ChevronDown className="h-8 w-8" />
+      </button>
+    </section>
+  );
+}

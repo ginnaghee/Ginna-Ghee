@@ -1,0 +1,103 @@
+import { ShoppingCart, Plus } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+
+export default function ProductShowcase() {
+  return (
+    <section id="products" className="py-20 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-ghee-dark mb-4">
+            Premium Ghee Collection
+          </h2>
+          <p className="text-xl text-ghee-medium max-w-3xl mx-auto leading-relaxed">
+            Discover our signature browned ghee, meticulously crafted to deliver exceptional richness and nutty flavor
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Featured Product */}
+          <div className="lg:col-span-2 bg-gradient-to-br from-ghee-cream to-ghee-beige rounded-2xl p-8 product-shadow">
+            <img 
+              src="https://pixabay.com/get/gd04f4607c1259cb11e1b5235271aa5b5f2f10e751cc9325313a9c6c4910677dbfc30c7d9ffb6ec11c0769e270c52edb2e7be0f46e61c1df16d7b2133f0b5bdcc_1280.jpg" 
+              alt="Premium Ginna Ghee jar with golden browned ghee and elegant packaging" 
+              className="w-full h-64 object-cover rounded-xl mb-6"
+            />
+            
+            <div className="flex justify-between items-start mb-4">
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-ghee-dark mb-2" data-testid="text-signature-browned-ghee">
+                  Signature Browned Ghee
+                </h3>
+                <p className="text-ghee-medium">Our flagship product - rich, nutty, and perfectly browned</p>
+              </div>
+              <div className="text-right">
+                <p className="text-3xl font-bold text-ghee-gold" data-testid="text-price-24-99">$24.99</p>
+                <p className="text-sm text-ghee-medium">16 oz jar</p>
+              </div>
+            </div>
+            
+            <div className="flex flex-wrap gap-2 mb-6">
+              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Grass-Fed</Badge>
+              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Lactose-Free</Badge>
+              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">High Smoke Point</Badge>
+              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Keto-Friendly</Badge>
+            </div>
+            
+            <Button className="w-full bg-ghee-gold text-white hover:bg-ghee-accent font-semibold" data-testid="button-add-to-cart-signature">
+              <Plus className="mr-2 h-4 w-4" />
+              Add to Cart
+            </Button>
+          </div>
+          
+          {/* Additional Products */}
+          <div className="space-y-6">
+            <div className="bg-white border border-ghee-beige rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <img 
+                src="https://pixabay.com/get/gab0b4c555f16e26718297d2e114799fd36b8b3830029da76ee669896434f72d321cc43f08620acb87ab23861a5743b39720aed9942a2cd0daac4cdbc06bb5856_1280.jpg" 
+                alt="Small batch artisanal ghee in traditional earthen pot" 
+                className="w-full h-32 object-cover rounded-lg mb-4"
+              />
+              <h4 className="text-lg font-serif font-semibold text-ghee-dark mb-2" data-testid="text-artisan-small-batch">
+                Artisan Small Batch
+              </h4>
+              <p className="text-sm text-ghee-medium mb-3">Limited edition, ultra-premium</p>
+              <div className="flex justify-between items-center">
+                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-34-99">$34.99</span>
+                <Button 
+                  size="sm" 
+                  className="bg-ghee-gold text-white hover:bg-ghee-accent"
+                  data-testid="button-add-to-cart-artisan"
+                >
+                  Add to Cart
+                </Button>
+              </div>
+            </div>
+            
+            <div className="bg-white border border-ghee-beige rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <img 
+                src="https://pixabay.com/get/g47c40055ec2e81a243e2364f2ab344c071164dc31ca92a6dbf816b7ebeef27c4e490e75b12e4fb74a3c20f93af0134ba3b53e2623810b138f13b3caa92019a23_1280.jpg" 
+                alt="Large family size ghee container with bulk packaging" 
+                className="w-full h-32 object-cover rounded-lg mb-4"
+              />
+              <h4 className="text-lg font-serif font-semibold text-ghee-dark mb-2" data-testid="text-family-size">
+                Family Size
+              </h4>
+              <p className="text-sm text-ghee-medium mb-3">Perfect for large families</p>
+              <div className="flex justify-between items-center">
+                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-39-99">$39.99</span>
+                <Button 
+                  size="sm" 
+                  className="bg-ghee-gold text-white hover:bg-ghee-accent"
+                  data-testid="button-add-to-cart-family"
+                >
+                  Add to Cart
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
