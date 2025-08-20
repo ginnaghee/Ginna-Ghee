@@ -20,9 +20,7 @@ export default function Footer() {
   const products = [
     "Signature Browned Ghee",
     "Artisan Small Batch", 
-    "Family Size",
-    "Gift Sets",
-    "Wholesale"
+    "Family Size"
   ];
 
   const support = [
