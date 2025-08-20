@@ -40,7 +40,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-ghee-gold">
+              <div className="w-10 h-10 rounded-lg overflow-hidden border-2 border-ghee-gold">
                 <img 
                   src={logoImage} 
                   alt="Ginna Ghee Logo" 
