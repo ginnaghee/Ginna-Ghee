@@ -7,7 +7,7 @@ export default function FAQSection() {
   const faqs = [
     {
       question: "What makes Ginna Ghee special?",
-      answer: "Our ghee is carefully browned to create a rich, nutty flavor that's distinctive and aromatic. We use traditional methods and premium grass-fed butter to ensure exceptional quality in every jar."
+      answer: "Our ghee is carefully browned to create a rich, nutty flavor that's distinctive and aromatic. We use traditional methods and premium butter to ensure exceptional quality in every jar."
     },
     {
       question: "What makes Ginna Ghee different from regular butter?",
