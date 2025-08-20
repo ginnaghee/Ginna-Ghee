@@ -76,7 +76,7 @@ export default function ContactSection() {
         
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-ghee-cream rounded-2xl p-8">
+          <div className="bg-ghee-beige rounded-2xl p-8">
             <h3 className="text-2xl font-serif font-bold text-ghee-dark mb-6">Send us a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
