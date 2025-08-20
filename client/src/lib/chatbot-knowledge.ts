@@ -14,15 +14,15 @@ const gheeKnowledgeBase = {
     fats: "14g total fat, 8-9g saturated fat per tablespoon",
     vitamins: "Rich in vitamins A, D, E, K - essential fat-soluble vitamins",
     cholesterol: "33mg per tablespoon",
-    lactose: "Virtually lactose-free (less than 0.1%) due to clarification process",
+    source: "Made from premium grass-fed butter",
     compounds: "Contains butyric acid, CLA, and omega-3 fatty acids"
   },
   
   cooking_uses: {
-    smoke_point: "485°F (252°C) - higher than most cooking oils, perfect for high-heat cooking",
-    applications: "Deep frying, sautéing, stir-frying, baking, roasting, grilling, butter substitute",
+    flavor_profile: "Rich, nutty, aromatic flavor from traditional browning process",
+    applications: "Sautéing, tempering spices, baking, traditional cooking, butter substitute",
     storage: "Room temperature stable for 18 months, no refrigeration required",
-    flavor: "Rich, nutty flavor that enhances dishes"
+    benefits: "Concentrated nutrients and distinctive taste that enhances dishes"
   },
   
   safety_consumption: {
@@ -39,8 +39,8 @@ const gheeKnowledgeBase = {
   },
   
   faqs: {
-    lactose_free: "Yes! The clarification process removes virtually all lactose and casein, making it suitable for most people with dairy sensitivities.",
-    vs_butter: "Ghee is cooked longer than butter, creating nutty flavor. It has higher smoke point, longer shelf life, concentrated nutrients, and is lactose-free.",
+    quality: "Ginna Ghee is made from premium grass-fed butter using traditional browning methods for exceptional flavor.",
+    vs_butter: "Ghee is cooked longer than butter, creating nutty flavor. It has longer shelf life, concentrated nutrients, and distinctive aroma.",
     grass_fed: "Grass-fed ghee has higher levels of beneficial nutrients like CLA and omega-3s, making it the preferred choice.",
     homemade: "Heat unsalted butter on low heat, simmer until water evaporates and milk solids turn golden, then strain."
   }
@@ -76,15 +76,15 @@ export async function getChatbotResponse(question: string): Promise<string> {
   
   // Nutritional information queries
   if (lowerQuestion.includes('nutrition') || lowerQuestion.includes('calorie') || lowerQuestion.includes('vitamin') || lowerQuestion.includes('fat')) {
-    return `📊 **Nutritional Facts (Per Tablespoon):**\n\n• **Calories:** ${gheeKnowledgeBase.nutritional_facts.calories}\n• **Total Fat:** ${gheeKnowledgeBase.nutritional_facts.fats}\n• **Vitamins:** ${gheeKnowledgeBase.nutritional_facts.vitamins}\n• **Cholesterol:** ${gheeKnowledgeBase.nutritional_facts.cholesterol}\n• **Lactose:** ${gheeKnowledgeBase.nutritional_facts.lactose}\n• **Special Compounds:** ${gheeKnowledgeBase.nutritional_facts.compounds}`;
+    return `📊 **Nutritional Facts (Per Tablespoon):**\n\n• **Calories:** ${gheeKnowledgeBase.nutritional_facts.calories}\n• **Total Fat:** ${gheeKnowledgeBase.nutritional_facts.fats}\n• **Vitamins:** ${gheeKnowledgeBase.nutritional_facts.vitamins}\n• **Cholesterol:** ${gheeKnowledgeBase.nutritional_facts.cholesterol}\n• **Source:** ${gheeKnowledgeBase.nutritional_facts.source}\n• **Special Compounds:** ${gheeKnowledgeBase.nutritional_facts.compounds}`;
   }
   
   // Cooking queries
   if (lowerQuestion.includes('cook') || lowerQuestion.includes('recipe') || lowerQuestion.includes('kitchen') || lowerQuestion.includes('fry') || lowerQuestion.includes('heat')) {
     if (lowerQuestion.includes('temperature') || lowerQuestion.includes('smoke') || lowerQuestion.includes('point')) {
-      return `🔥 **Cooking Temperature:**\n\n**Smoke Point:** ${gheeKnowledgeBase.cooking_uses.smoke_point}\n\nThis high smoke point makes ghee perfect for:\n• Deep frying\n• Stir-frying\n• Sautéing\n• High-heat roasting\n• Grilling\n\nUnlike many oils, ghee won't break down into harmful compounds at high temperatures!`;
+      return `🔥 **Traditional Cooking:**\n\n**Flavor Profile:** ${gheeKnowledgeBase.cooking_uses.flavor_profile}\n\nGinna Ghee is perfect for:\n• Traditional Indian cooking\n• Spice tempering (tadka)\n• Sautéing vegetables\n• Baking and roasting\n• Authentic recipe preparation\n\nOur careful browning process creates a distinctive nutty aroma that enhances every dish!`;
     }
-    return `👨‍🍳 **Cooking with Ghee:**\n\n**Smoke Point:** ${gheeKnowledgeBase.cooking_uses.smoke_point}\n\n**Perfect for:** ${gheeKnowledgeBase.cooking_uses.applications}\n\n**Flavor:** ${gheeKnowledgeBase.cooking_uses.flavor}\n\n**Pro tip:** Replace butter 1:1 with ghee in any recipe for richer flavor and better heat stability!`;
+    return `👨‍🍳 **Cooking with Ginna Ghee:**\n\n**Flavor:** ${gheeKnowledgeBase.cooking_uses.flavor_profile}\n\n**Perfect for:** ${gheeKnowledgeBase.cooking_uses.applications}\n\n**Benefits:** ${gheeKnowledgeBase.cooking_uses.benefits}\n\n**Pro tip:** Replace butter 1:1 with ghee in any recipe for richer flavor and authentic taste!`;
   }
   
   // Storage queries
@@ -97,14 +97,14 @@ export async function getChatbotResponse(question: string): Promise<string> {
     return `⚖️ **Safe Consumption Guidelines:**\n\n• **Daily Amount:** ${gheeKnowledgeBase.safety_consumption.daily_amount}\n• **Special Conditions:** ${gheeKnowledgeBase.safety_consumption.heart_disease}\n• **Weight Management:** ${gheeKnowledgeBase.safety_consumption.weight_loss}\n\nAlways consult with your healthcare provider if you have specific health conditions!`;
   }
   
-  // Lactose queries
+  // Dairy and sourcing queries
   if (lowerQuestion.includes('lactose') || lowerQuestion.includes('dairy') || lowerQuestion.includes('intoleran')) {
-    return `🥛 **Lactose-Free Information:**\n\n${gheeKnowledgeBase.faqs.lactose_free}\n\nThe clarification process used in making ghee removes virtually all lactose and casein proteins, making it suitable for most people with dairy sensitivities. Our ghee contains less than 0.1% lactose.`;
+    return `🥛 **About Our Dairy Source:**\n\nGinna Ghee is made from premium grass-fed butter using traditional methods. Our careful browning process creates a rich, nutty flavor. If you have specific dietary concerns, we recommend consulting with your healthcare provider to determine what's best for your individual needs.`;
   }
   
   // Comparison queries
   if (lowerQuestion.includes('butter') || lowerQuestion.includes('difference') || lowerQuestion.includes('vs') || lowerQuestion.includes('compare')) {
-    return `🧈 **Ghee vs Butter:**\n\n${gheeKnowledgeBase.faqs.vs_butter}\n\n**Key Advantages of Ghee:**\n• Higher smoke point (485°F vs 350°F)\n• Longer shelf life\n• Lactose-free\n• More concentrated nutrients\n• Richer, nuttier flavor\n• Better for high-heat cooking`;
+    return `🧈 **Ghee vs Butter:**\n\n${gheeKnowledgeBase.faqs.vs_butter}\n\n**Key Advantages of Ginna Ghee:**\n• Distinctive browned, nutty flavor\n• Longer shelf life\n• More concentrated nutrients\n• Traditional browning process\n• Richer, aromatic taste\n• Perfect for authentic cooking`;
   }
   
   // Grass-fed queries

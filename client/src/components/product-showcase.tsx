@@ -39,9 +39,9 @@ export default function ProductShowcase() {
             
             <div className="flex flex-wrap gap-2 mb-6">
               <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Grass-Fed</Badge>
-              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Lactose-Free</Badge>
-              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">High Smoke Point</Badge>
-              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Keto-Friendly</Badge>
+              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Premium Quality</Badge>
+              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Rich & Nutty</Badge>
+              <Badge variant="secondary" className="bg-ghee-gold/20 text-ghee-dark">Artisanal</Badge>
             </div>
             
             <Button className="w-full bg-ghee-gold text-white hover:bg-ghee-accent font-semibold" data-testid="button-add-to-cart-signature">

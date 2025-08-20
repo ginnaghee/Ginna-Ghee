@@ -4,9 +4,9 @@ export default function NutritionalFacts() {
   const nutritionalCards = [
     {
       icon: Flame,
-      value: "485°F",
-      label: "High Smoke Point",
-      description: "Perfect for high-heat cooking"
+      value: "Rich",
+      label: "Nutty Flavor",
+      description: "Distinctive browned taste"
     },
     {
       icon: Heart,
@@ -16,9 +16,9 @@ export default function NutritionalFacts() {
     },
     {
       icon: Leaf,
-      value: "0g",
-      label: "Lactose",
-      description: "100% lactose-free"
+      value: "Pure",
+      label: "Dairy Butter",
+      description: "Made from quality butter"
     },
     {
       icon: Shield,

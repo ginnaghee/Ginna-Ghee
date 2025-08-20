@@ -6,12 +6,12 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "Is ghee lactose-free?",
-      answer: "Yes! The clarification process removes virtually all lactose and casein, making it suitable for most people with dairy sensitivities. Our ghee contains less than 0.1% lactose."
+      question: "What makes Ginna Ghee special?",
+      answer: "Our ghee is carefully browned to create a rich, nutty flavor that's distinctive and aromatic. We use traditional methods and premium grass-fed butter to ensure exceptional quality in every jar."
     },
     {
       question: "What makes Ginna Ghee different from regular butter?",
-      answer: "Our ghee is cooked longer than regular clarified butter, creating a rich nutty flavor through the browning process. It has a higher smoke point (485°F), longer shelf life, and concentrated nutrients."
+      answer: "Our ghee is cooked longer than regular clarified butter, creating a rich nutty flavor through the browning process. It has a longer shelf life, concentrated nutrients, and distinctive aroma that enhances any dish."
     },
     {
       question: "How should I store ghee?",

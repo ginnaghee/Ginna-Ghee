@@ -26,8 +26,8 @@ export default function RecipesSection() {
   const cookingTips = [
     {
       icon: Thermometer,
-      title: "High Heat Cooking",
-      description: "Perfect for stir-frying and deep-frying with 485°F smoke point"
+      title: "Traditional Cooking",
+      description: "Perfect for authentic recipes and traditional Indian cuisine"
     },
     {
       icon: Flame,
