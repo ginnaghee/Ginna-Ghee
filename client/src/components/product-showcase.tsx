@@ -2,6 +2,7 @@ import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import signatureGheeImage from "@assets/honey-5864_1280_1755659334621.jpg";
+import honeyJarsImage from "@assets/honey-4919959_640_1755659832249.jpg";
 
 export default function ProductShowcase() {
   return (
@@ -52,8 +53,8 @@ export default function ProductShowcase() {
           <div className="space-y-6">
             <div className="bg-white border border-ghee-beige rounded-xl p-6 hover:shadow-lg transition-shadow">
               <img 
-                src="https://pixabay.com/get/gab0b4c555f16e26718297d2e114799fd36b8b3830029da76ee669896434f72d321cc43f08620acb87ab23861a5743b39720aed9942a2cd0daac4cdbc06bb5856_1280.jpg" 
-                alt="Small batch artisanal ghee in traditional earthen pot" 
+                src={honeyJarsImage} 
+                alt="Artisan small batch ghee jars with golden honey-like consistency" 
                 className="w-full h-32 object-cover rounded-lg mb-4"
               />
               <h4 className="text-lg font-serif font-semibold text-ghee-dark mb-2" data-testid="text-artisan-small-batch">
@@ -61,14 +62,14 @@ export default function ProductShowcase() {
               </h4>
               <p className="text-sm text-ghee-medium mb-3">Limited edition, ultra-premium</p>
               <div className="text-center">
-                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-34-99">$34.99</span>
+                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-10-99">$10.99</span>
               </div>
             </div>
             
             <div className="bg-white border border-ghee-beige rounded-xl p-6 hover:shadow-lg transition-shadow">
               <img 
-                src="https://pixabay.com/get/g47c40055ec2e81a243e2364f2ab344c071164dc31ca92a6dbf816b7ebeef27c4e490e75b12e4fb74a3c20f93af0134ba3b53e2623810b138f13b3caa92019a23_1280.jpg" 
-                alt="Large family size ghee container with bulk packaging" 
+                src={honeyJarsImage} 
+                alt="Family size ghee jars with premium golden ghee" 
                 className="w-full h-32 object-cover rounded-lg mb-4"
               />
               <h4 className="text-lg font-serif font-semibold text-ghee-dark mb-2" data-testid="text-family-size">
@@ -76,7 +77,7 @@ export default function ProductShowcase() {
               </h4>
               <p className="text-sm text-ghee-medium mb-3">Perfect for large families</p>
               <div className="text-center">
-                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-39-99">$39.99</span>
+                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-35-99">$35.99</span>
               </div>
             </div>
           </div>
