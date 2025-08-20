@@ -215,8 +215,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-ghee-dark mb-1">Visit Us</h4>
-                    <p className="text-ghee-medium" data-testid="text-address-line1">123 Golden Valley Road</p>
-                    <p className="text-ghee-medium" data-testid="text-address-line2">Artisan District, CA 90210</p>
+                    <p className="text-ghee-medium" data-testid="text-address-dmv">DMV</p>
                   </div>
                 </div>
               </div>
