@@ -1,6 +1,7 @@
 import { ShoppingCart, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import signatureGheeImage from "@assets/honey-5864_1280_1755659334621.jpg";
 
 export default function ProductShowcase() {
   return (
@@ -19,8 +20,8 @@ export default function ProductShowcase() {
           {/* Featured Product */}
           <div className="lg:col-span-2 bg-gradient-to-br from-ghee-cream to-ghee-beige rounded-2xl p-8 product-shadow">
             <img 
-              src="https://pixabay.com/get/gd04f4607c1259cb11e1b5235271aa5b5f2f10e751cc9325313a9c6c4910677dbfc30c7d9ffb6ec11c0769e270c52edb2e7be0f46e61c1df16d7b2133f0b5bdcc_1280.jpg" 
-              alt="Premium Ginna Ghee jar with golden browned ghee and elegant packaging" 
+              src={signatureGheeImage} 
+              alt="Premium Ginna Ghee signature browned ghee in glass jar with golden honey-like consistency" 
               className="w-full h-64 object-cover rounded-xl mb-6"
             />
             
