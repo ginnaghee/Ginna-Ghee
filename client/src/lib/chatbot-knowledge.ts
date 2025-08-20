@@ -10,10 +10,8 @@ const gheeKnowledgeBase = {
   },
   
   nutritional_facts: {
-    calories: "112-120 calories per tablespoon (14g)",
-    fats: "14g total fat, 8-9g saturated fat per tablespoon",
+    fats: "Rich in healthy fats including saturated and unsaturated fats",
     vitamins: "Rich in vitamins A, D, E, K - essential fat-soluble vitamins",
-    cholesterol: "33mg per tablespoon",
     source: "Made from premium grass-fed butter",
     compounds: "Contains butyric acid, CLA, and omega-3 fatty acids"
   },
@@ -26,9 +24,9 @@ const gheeKnowledgeBase = {
   },
   
   safety_consumption: {
-    daily_amount: "Up to 10% of daily calories from ghee is generally safe. For a 2000-calorie diet, that's 1-2 tablespoons daily",
-    heart_disease: "Those with heart disease, high cholesterol, or metabolic conditions should consult their doctor",
-    weight_loss: "Contains beneficial compounds but is calorie-dense - moderation is key"
+    daily_amount: "1-2 tablespoons daily is generally considered moderate consumption",
+    heart_disease: "Those with heart disease or metabolic conditions should consult their doctor",
+    weight_loss: "Contains beneficial compounds - moderation is key for balanced nutrition"
   },
   
   storage_tips: {
@@ -58,7 +56,7 @@ export async function getChatbotResponse(question: string): Promise<string> {
       return `❤️ **Heart Health Benefits:**\n\n${gheeKnowledgeBase.health_benefits.heart}\n\nRemember to consume ghee in moderation as part of a balanced diet.`;
     }
     if (lowerQuestion.includes('weight') || lowerQuestion.includes('fat') || lowerQuestion.includes('loss')) {
-      return `⚖️ **Weight Management:**\n\n${gheeKnowledgeBase.health_benefits.weight}\n\nWhile ghee can support weight management, it's calorie-dense, so portion control is important.`;
+      return `⚖️ **Weight Management:**\n\n${gheeKnowledgeBase.health_benefits.weight}\n\nWhile ghee can support weight management, portion control is important for balanced nutrition.`;
     }
     if (lowerQuestion.includes('skin') || lowerQuestion.includes('beauty')) {
       return `✨ **Skin Health Benefits:**\n\n${gheeKnowledgeBase.health_benefits.skin}\n\nYou can use ghee both internally and topically for skin benefits!`;
@@ -76,7 +74,7 @@ export async function getChatbotResponse(question: string): Promise<string> {
   
   // Nutritional information queries
   if (lowerQuestion.includes('nutrition') || lowerQuestion.includes('calorie') || lowerQuestion.includes('vitamin') || lowerQuestion.includes('fat')) {
-    return `📊 **Nutritional Facts (Per Tablespoon):**\n\n• **Calories:** ${gheeKnowledgeBase.nutritional_facts.calories}\n• **Total Fat:** ${gheeKnowledgeBase.nutritional_facts.fats}\n• **Vitamins:** ${gheeKnowledgeBase.nutritional_facts.vitamins}\n• **Cholesterol:** ${gheeKnowledgeBase.nutritional_facts.cholesterol}\n• **Source:** ${gheeKnowledgeBase.nutritional_facts.source}\n• **Special Compounds:** ${gheeKnowledgeBase.nutritional_facts.compounds}`;
+    return `📊 **Nutritional Facts:**\n\n• **Healthy Fats:** ${gheeKnowledgeBase.nutritional_facts.fats}\n• **Vitamins:** ${gheeKnowledgeBase.nutritional_facts.vitamins}\n• **Source:** ${gheeKnowledgeBase.nutritional_facts.source}\n• **Special Compounds:** ${gheeKnowledgeBase.nutritional_facts.compounds}`;
   }
   
   // Cooking queries

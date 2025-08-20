@@ -10,9 +10,9 @@ export default function NutritionalFacts() {
     },
     {
       icon: Heart,
-      value: "112",
-      label: "Calories/Tbsp",
-      description: "Energy-rich healthy fats"
+      value: "Healthy",
+      label: "Fats",
+      description: "Energy-rich nutrients"
     },
     {
       icon: Leaf,
