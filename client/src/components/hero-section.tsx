@@ -1,5 +1,6 @@
 import { ChevronDown, ShoppingCart, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroImage from "@assets/butter-1957621_1280_1755658923748.jpg";
 
 export default function HeroSection() {
   const scrollToProducts = () => {
@@ -13,8 +14,8 @@ export default function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center hero-pattern">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://pixabay.com/get/g3f96b79b86cd75cfc61f6159865cb462a4b92634d5ae8b6e4d758df95c452898874e4e3b11529f8d6a7a90f29dd2cb1ea04672be2fdbe9571d71dccff29592dc_1280.jpg" 
-          alt="Premium golden ghee in elegant glass jar with warm lighting" 
+          src={heroImage} 
+          alt="Premium artisanal butter with herbs on wooden surface" 
           className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ghee-cream/70 to-transparent"></div>
