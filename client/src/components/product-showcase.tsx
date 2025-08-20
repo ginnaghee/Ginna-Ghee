@@ -34,7 +34,7 @@ export default function ProductShowcase() {
                 <p className="text-ghee-medium">Our flagship product - rich, nutty, and perfectly browned</p>
               </div>
               <div className="text-right">
-                <p className="text-3xl font-bold text-ghee-gold" data-testid="text-price-24-99">$24.99</p>
+                <p className="text-3xl font-bold text-ghee-gold" data-testid="text-price-24-99">$15.99</p>
                 <p className="text-sm text-ghee-medium">16 oz jar</p>
               </div>
             </div>
@@ -62,7 +62,7 @@ export default function ProductShowcase() {
               </h4>
               <p className="text-sm text-ghee-medium mb-3">Limited edition, ultra-premium</p>
               <div className="text-center">
-                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-10-99">$10.99</span>
+                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-10-99">$9.99</span>
               </div>
             </div>
             
@@ -77,7 +77,7 @@ export default function ProductShowcase() {
               </h4>
               <p className="text-sm text-ghee-medium mb-3">Perfect for large families</p>
               <div className="text-center">
-                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-35-99">$35.99</span>
+                <span className="text-xl font-bold text-ghee-gold" data-testid="text-price-35-99">$17.99</span>
               </div>
             </div>
           </div>

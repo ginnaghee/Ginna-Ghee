@@ -193,8 +193,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-ghee-dark mb-1">Email Us</h4>
-                    <p className="text-ghee-medium" data-testid="text-email-hello">hello@ginnaghee.com</p>
-                    <p className="text-ghee-medium" data-testid="text-email-support">support@ginnaghee.com</p>
+                    <p className="text-ghee-medium" data-testid="text-email-hello">ginnaghee@.com</p>
+
                   </div>
                 </div>
                 
@@ -204,7 +204,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-ghee-dark mb-1">Call Us</h4>
-                    <p className="text-ghee-medium" data-testid="text-phone-number">+1 (555) 123-GHEE</p>
+                    <p className="text-ghee-medium" data-testid="text-phone-number">+1 (201) 315-8033</p>
                     <p className="text-sm text-ghee-medium/80">Mon-Fri 9AM-6PM EST</p>
                   </div>
                 </div>

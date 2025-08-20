@@ -75,18 +75,7 @@ export default function RecipesSection() {
                 <p className="text-ghee-medium mb-4">
                   {recipe.description}
                 </p>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-ghee-medium flex items-center" data-testid={`text-time-${recipe.time.replace(/\s+/g, '-')}`}>
-                    <Clock className="mr-1" size={16} />{recipe.time}
-                  </span>
-                  <Button 
-                    variant="ghost" 
-                    className="text-ghee-gold hover:text-ghee-accent font-semibold p-0"
-                    data-testid={`button-view-recipe-${recipe.title.toLowerCase().replace(/\s+/g, '-')}`}
-                  >
-                    View Recipe <ArrowRight className="ml-1" size={16} />
-                  </Button>
-                </div>
+                
               </div>
             </div>
           ))}

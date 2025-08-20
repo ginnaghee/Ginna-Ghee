@@ -3,8 +3,8 @@ import { Check } from "lucide-react";
 export default function AboutSection() {
   const features = [
     {
-      title: "Grass-Fed Source",
-      description: "Only the finest grass-fed butter from trusted dairy farms"
+      title: "Quality Butter",
+      description: "Only the finest butter from trusted dairy farms"
     },
     {
       title: "Slow Browning Process", 
