@@ -1,4 +1,4 @@
-import { ChevronDown, Play } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
@@ -26,16 +26,7 @@ export default function HeroSection() {
             Experience the authentic flavor of premium browned ghee, crafted with traditional methods 
             to bring you the richest, nuttiest taste that transforms every meal into a culinary masterpiece.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              variant="outline"
-              className="border-2 border-ghee-gold text-ghee-gold px-8 py-4 rounded-full hover:bg-ghee-gold hover:text-white transition-all font-semibold text-lg h-auto"
-              data-testid="button-watch-story"
-            >
-              <Play className="mr-3 h-5 w-5" />
-              Watch Our Story
-            </Button>
-          </div>
+
         </div>
       </div>
       

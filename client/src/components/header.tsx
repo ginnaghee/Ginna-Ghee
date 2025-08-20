@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ShoppingCart, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@assets/ginna-ghee-logo.jpeg";
 
@@ -68,10 +68,7 @@ export default function Header() {
             >
               Contact
             </button>
-            <Button className="bg-ghee-gold text-white hover:bg-ghee-accent font-medium" data-testid="button-shop-now">
-              <ShoppingCart className="mr-2 h-4 w-4" />
-              Shop Now
-            </Button>
+
           </div>
           
           <div className="md:hidden">
@@ -104,10 +101,7 @@ export default function Header() {
               <button onClick={() => scrollToSection('contact')} className="text-ghee-dark hover:text-ghee-gold transition-colors font-medium text-left">
                 Contact
               </button>
-              <Button className="bg-ghee-gold text-white hover:bg-ghee-accent font-medium w-full">
-                <ShoppingCart className="mr-2 h-4 w-4" />
-                Shop Now
-              </Button>
+
             </div>
           </div>
         )}

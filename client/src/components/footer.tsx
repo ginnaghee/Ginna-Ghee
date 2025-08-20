@@ -29,8 +29,7 @@ export default function Footer() {
     "FAQ",
     "Nutritional Guide",
     "Cooking Tips",
-    "Shipping Info",
-    "Returns"
+    "Health Benefits"
   ];
 
   return (
@@ -123,7 +122,6 @@ export default function Footer() {
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-ghee-cream/60 hover:text-ghee-gold text-sm transition-colors" data-testid="link-privacy-policy">Privacy Policy</a>
             <a href="#" className="text-ghee-cream/60 hover:text-ghee-gold text-sm transition-colors" data-testid="link-terms-of-service">Terms of Service</a>
-            <a href="#" className="text-ghee-cream/60 hover:text-ghee-gold text-sm transition-colors" data-testid="link-shipping-policy">Shipping Policy</a>
           </div>
         </div>
       </div>
