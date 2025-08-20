@@ -10,15 +10,8 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center hero-pattern">
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1587736804923-b0be426c4085?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3" 
-          alt="Golden ghee melting in traditional copper vessel, artisanal clarified butter" 
-          className="w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-ghee-cream/70 to-transparent"></div>
-      </div>
+    <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-br from-ghee-cream via-ghee-beige to-ghee-gold/20">
+      <div className="absolute inset-0 bg-gradient-to-r from-ghee-cream/80 to-ghee-beige/60"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-2xl slide-in">
