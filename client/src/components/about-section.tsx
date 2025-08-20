@@ -1,5 +1,4 @@
-import { Check, Play } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
 
 export default function AboutSection() {
   const features = [
@@ -50,10 +49,7 @@ export default function AboutSection() {
               ))}
             </div>
             
-            <Button className="bg-ghee-gold text-white hover:bg-ghee-accent font-semibold" data-testid="button-watch-process">
-              <Play className="mr-2 h-4 w-4" />
-              Watch Our Process
-            </Button>
+
           </div>
           
           <div className="relative">
@@ -70,7 +66,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-ghee-dark" data-testid="text-premium-quality">Premium Quality</p>
-                  <p className="text-sm text-ghee-medium">Award-winning ghee</p>
+                  <p className="text-sm text-ghee-medium">Traditional craftsmanship</p>
                 </div>
               </div>
             </div>

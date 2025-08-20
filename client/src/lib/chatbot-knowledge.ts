@@ -117,7 +117,7 @@ export async function getChatbotResponse(question: string): Promise<string> {
   
   // Brand-specific queries
   if (lowerQuestion.includes('ginna') || lowerQuestion.includes('brand') || lowerQuestion.includes('your')) {
-    return `🏆 **About Ginna Ghee:**\n\n"Richness You Can Taste" - that's our promise!\n\n**What makes us special:**\n• Premium grass-fed butter source\n• Traditional browning process for rich, nutty flavor\n• Small-batch artisanal production\n• Rigorous quality testing\n• 18-month shelf stability\n• Award-winning taste\n\nWe honor centuries-old techniques while maintaining the highest quality standards. Every jar tells a story of tradition, patience, and perfection!`;
+    return `🏆 **About Ginna Ghee:**\n\n"Richness You Can Taste" - that's our promise!\n\n**What makes us special:**\n• Premium grass-fed butter source\n• Traditional browning process for rich, nutty flavor\n• Small-batch artisanal production\n• Rigorous quality testing\n• 18-month shelf stability\n• Exceptional rich taste\n\nWe honor centuries-old techniques while maintaining the highest quality standards. Every jar tells a story of tradition, patience, and perfection!`;
   }
   
   // Default response for unrecognized queries

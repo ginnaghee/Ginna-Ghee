@@ -1,5 +1,7 @@
 import { Clock, ArrowRight, Thermometer, Flame, Utensils, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import dalTadkaImage from "@assets/lentil-5932977_1280_1755660255982.jpg";
+import halwaImage from "@assets/halwa-346481_1280_1755660445992.jpg";
 
 export default function RecipesSection() {
   const recipes = [
@@ -7,7 +9,7 @@ export default function RecipesSection() {
       title: "Traditional Dal Tadka",
       description: "Classic lentil curry enhanced with our signature ghee tempering for authentic flavor",
       time: "30 mins",
-      image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250"
+      image: dalTadkaImage
     },
     {
       title: "Ghee-Roasted Vegetables",
@@ -19,7 +21,7 @@ export default function RecipesSection() {
       title: "Ghee Halwa",
       description: "Rich, aromatic semolina halwa made with generous amounts of our premium ghee",
       time: "20 mins",
-      image: "https://pixabay.com/get/g6658ab3995764bad997d23384830f43f1221f080e9a0da536fd93dfebe84ddf0c275d3e7d06c677471b5d582a7fae0f94d255ac9330c951ea39fadf59bd6e9ae_1280.jpg"
+      image: halwaImage
     }
   ];
 
